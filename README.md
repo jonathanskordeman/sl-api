@@ -3,7 +3,7 @@ This project is an abstraction layer for accessing travel information - primaril
 You will need to register with trafiklab to get the api key/keys required
 
 ## Installation
-``` pip install trafiklab ```
+``` pip install sl-api ```
 
 ## Usage
 TBD
