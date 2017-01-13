@@ -1,0 +1,14 @@
+#intelliJ stuff
+.idea
+*.iml
+#VirtualEnv
+venv
+#VisualStudio
+*.sln
+*.pyproj
+.vs
+/sl/__pycache__
+/trafiklab/__pycache__
+trafiklab.egg-info
+.cache
+*.egg

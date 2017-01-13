@@ -1,0 +1,77 @@
+{
+  "StatusCode": 0,
+  "Message": null,
+  "ExecutionTime": 0,
+  "ResponseData": [
+    {
+      "Name": "Häradsvägen (Stockholm)",
+      "SiteId": "1664",
+      "Type": "Station",
+      "X": "17952321",
+      "Y": "59286250"
+    },
+    {
+      "Name": "Härsbackavägen (Österåker)",
+      "SiteId": "2644",
+      "Type": "Station",
+      "X": "18390249",
+      "Y": "59483195"
+    },
+    {
+      "Name": "Hästängsuddsvägen (Österåker)",
+      "SiteId": "2843",
+      "Type": "Station",
+      "X": "18261721",
+      "Y": "59445485"
+    },
+    {
+      "Name": "Hovsjö (Förrådsvägen) (Södertälje)",
+      "SiteId": "7546",
+      "Type": "Station",
+      "X": "17598011",
+      "Y": "59182254"
+    },
+    {
+      "Name": "Rådsvägen (Huddinge)",
+      "SiteId": "7916",
+      "Type": "Station",
+      "X": "17989132",
+      "Y": "59241475"
+    },
+    {
+      "Name": "Färjestadsvägen (Ekerö)",
+      "SiteId": "3240",
+      "Type": "Station",
+      "X": "17735762",
+      "Y": "59361688"
+    },
+    {
+      "Name": "Förrådsvägen (Huddinge)",
+      "SiteId": "7025",
+      "Type": "Station",
+      "X": "17987505",
+      "Y": "59232971"
+    },
+    {
+      "Name": "Månadsvägen (Järfälla)",
+      "SiteId": "9885",
+      "Type": "Station",
+      "X": "17820935",
+      "Y": "59422320"
+    },
+    {
+      "Name": "Förrådsvägen (Södertälje)",
+      "SiteId": "7546",
+      "Type": "Station",
+      "X": "17598011",
+      "Y": "59182254"
+    },
+    {
+      "Name": "Statsrådsvägen (Stockholm)",
+      "SiteId": "1587",
+      "Type": "Station",
+      "X": "18112311",
+      "Y": "59279760"
+    }
+  ]
+}
