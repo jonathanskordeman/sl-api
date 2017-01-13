@@ -3,7 +3,7 @@
 
 __author__ = "Jonathan Skordeman"
 __email__ = "jonathan@skordeman.se"
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 from sl.deviations import Deviation, DEVIATIONS_API_URL
 from sl.real_time_departures import (Bus,
