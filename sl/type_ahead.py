@@ -1,11 +1,11 @@
-from sl.models import TrafiklabModel
+from sl.models import BaseModel
 import sl.utils as utils
 
 
 TYPE_AHEAD_API_URL = 'http://api.sl.se/api2/typeahead.json'
 
 
-class Site(TrafiklabModel):
+class Site(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'Name': None,

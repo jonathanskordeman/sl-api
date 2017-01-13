@@ -1,10 +1,10 @@
-from sl.models import TrafiklabModel
+from sl.models import BaseModel
 import sl.utils as utils
 
 TRAVEL_PLANNER_API_URL = 'http://api.sl.se/api2/TravelplannerV2/trip.json'
 
 
-class Trip(TrafiklabModel):
+class Trip(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'dur': None,
@@ -39,7 +39,7 @@ class Trip(TrafiklabModel):
             self.notes = notes
 
 
-class LegList(TrafiklabModel):
+class LegList(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {'Leg': None}
         for (param, default) in self.default_params.items():
@@ -48,7 +48,7 @@ class LegList(TrafiklabModel):
             self.leg = [Leg.NewFromJson(leg) for leg in kwargs['Leg']]
 
 
-class Leg(TrafiklabModel):
+class Leg(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'idx': None,
@@ -75,7 +75,7 @@ class Leg(TrafiklabModel):
             self.geometry_ref = LegRef.NewFromJson(kwargs.get('GeometryRef'))
 
 
-class LegPoint(TrafiklabModel):
+class LegPoint(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'name': None,
@@ -92,7 +92,7 @@ class LegPoint(TrafiklabModel):
             setattr(self, utils.to_snake_case(param), kwargs.get(param, default))
 
 
-class LegRef(TrafiklabModel):
+class LegRef(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'ref': None

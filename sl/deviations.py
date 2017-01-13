@@ -1,11 +1,11 @@
-from sl.models import TrafiklabModel
+from sl.models import BaseModel
 import sl.utils as utils
 
 
 DEVIATIONS_API_URL = "http://api.sl.se/api2/deviations.json"
 
 
-class Deviation(TrafiklabModel):
+class Deviation(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             "Created": None,

@@ -1,10 +1,10 @@
 import sl.utils as utils
-from sl.models import TrafiklabModel
+from sl.models import BaseModel
 
 REAL_TIME_DEPARTURES_API_URL = 'http://api.sl.se/api2/realtimedeparturesV4.json'
 
 
-class Departure(TrafiklabModel):
+class Departure(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'LatestUpdate': None,
@@ -32,7 +32,7 @@ class Departure(TrafiklabModel):
             self.stop_point_deviations = [StopPointDeviation.NewFromJson(s) for s in kwargs['StopPointDeviations']]
 
 
-class Vehicle(TrafiklabModel):
+class Vehicle(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'SiteId': None,
@@ -110,7 +110,7 @@ class Metro(Vehicle):
         #     setattr(self, utils.to_snake_case(param), kwargs.get(param, default))
 
 
-class RealTimeDeviation(TrafiklabModel):
+class RealTimeDeviation(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'Consequence': None,
@@ -121,7 +121,7 @@ class RealTimeDeviation(TrafiklabModel):
             setattr(self, utils.to_snake_case(param), kwargs.get(param, default))
 
 
-class StopInfo(TrafiklabModel):
+class StopInfo(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'GroupOfLine': None,
@@ -133,7 +133,7 @@ class StopInfo(TrafiklabModel):
             setattr(self, utils.to_snake_case(param), kwargs.get(param, default))
 
 
-class StopPointDeviation(TrafiklabModel):
+class StopPointDeviation(BaseModel):
     def __init__(self, **kwargs):
         self.default_params = {
             'StopInfo': None,

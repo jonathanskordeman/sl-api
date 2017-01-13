@@ -3,7 +3,7 @@ import json
 import sl.utils as utils
 
 
-class TrafiklabModel(object):
+class BaseModel(object):
 
     """Base class for the whole api, based on code in the python-twitter library"""
 
